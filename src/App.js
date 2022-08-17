@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import CityRoute from "./Cityroute";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import MainPage from './Mainpage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="RootApp">
+      <div className='container'>
+        <h1 className='title'><a href='/'>Simple Weather App</a></h1>
+        <Router>
+          <Routes>
+            <Route path="/vietnam-cities"
+              element = {<MainPage type = 'vn'/>}>
+            </Route>
+            <Route path="/global-cities"
+              element = {<MainPage type = 'global'/>}>
+            </Route>
+            <Route path='/'
+              element = {<DefaultRoute/>}>
+            </Route>
+            <Route path = {`:cityname`}
+              element = {<CityRoute/>}>
+            </Route>
+          </Routes>
+        </Router>
+      </div>
     </div>
   );
+}
+function DefaultRoute(){
+  window.location.href = "/vietnam-cities" 
 }
 
 export default App;
