@@ -1,3 +1,6 @@
+# About
+A simple weather app using self create data with search function
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
