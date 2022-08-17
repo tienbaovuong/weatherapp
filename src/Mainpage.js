@@ -37,23 +37,36 @@ export default function MainPage(props) {
             break
         }
     }
-    
-    //default city data setup
+    //default city data setup + cache checking
     let cityData
     if(isVN && recordDataVN.length === 0){
-        if(data.vietnam.length !== 0){
+        if(window.localStorage.getItem('vietnam')&& window.localStorage.getItem('vietnam').length>0){
+            dispatch(initiateVNCity(JSON.parse(window.localStorage.getItem('vietnam'))))
+        }
+        else if(data.vietnam.length !== 0){
             cityData = data.vietnam
             cityData = cityData.slice(0, 6)
             dispatch(initiateVNCity(cityData))
         }
     }
     else if(!isVN && recordDataGlobal.length === 0){
-        if(data.global.length !==0){
+        if(window.localStorage.getItem('global') && window.localStorage.getItem('global').length>0){
+            dispatch(initiateGlobalCity(JSON.parse(window.localStorage.getItem('global'))))
+        }
+        else if(data.global.length !==0){
             cityData = data.global
             cityData = cityData.slice(0, 6)
             dispatch(initiateGlobalCity(cityData))
         }
     }
+    //cache when record data change
+    if(isVN){
+        window.localStorage.setItem('vietnam', JSON.stringify(recordDataVN))
+    }
+    else{
+        window.localStorage.setItem('global', JSON.stringify(recordDataGlobal))
+    }
+    
     const [searchDetail, setSearchDetail] = useState("")
     const handleChange = (props) => {
         setSearchDetail(props)
@@ -111,7 +124,6 @@ export default function MainPage(props) {
                 <TextField id="standard-basic" 
                             placeholder="Search for a city" 
                             variant="standard" 
-                            color="success"
                             inputProps={{ 
                                 style: { 
                                     color: "white", 
