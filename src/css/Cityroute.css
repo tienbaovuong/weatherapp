@@ -19,4 +19,24 @@
     border-radius: 20px;
     color: black;
     padding: 10px;
+    box-shadow: rgba(145, 145, 145, 0.4) 0 25px 0px -13px;
+}
+.itemDate .date{
+    color: orange;
+    font-size: 25px;
+}
+.itemDate .temparature{
+    font-size: 50px;
+    font-weight: 700;
+}
+.itemDate .icon{
+    width: 100px;
+    height: 100px;
+}
+.itemDate .weather{
+    margin-top: 10px;
+    color: gray;
+    font-size: 15px;
+
+    text-transform: uppercase;
 }

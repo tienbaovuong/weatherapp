@@ -35,7 +35,7 @@ export default function CityRoute(){
         <div className="citypage">
             <section className="citytitle">
                 <h2 className="cityname">{cityData.city}</h2>
-                <img src="/image/back.png" className="backbutton" onClick={(e) => {navigate(-1)}}></img>
+                <img src="/image/back.png" alt="" className="backbutton" onClick={(e) => {navigate(-1)}}></img>
                 <h2>Today's weather</h2>
                 <h2><img src={weatherType[todayData.weather]} alt="" className="iconTitle"></img></h2>
                 <h2>{todayData.temparature} &deg;C, {todayData.weather}</h2>
@@ -47,10 +47,10 @@ export default function CityRoute(){
                         return(
                             <div className='col-md-4'>
                                 <div className='itemDate'>
-                                    <p>{date.date}</p>
-                                    <p>{date.temparature} &deg;C</p>
-                                    <p>{date.weather}</p>
-                                    <img src={weatherType[date.weather]} alt="" width = "100px" height="100px"></img>
+                                    <p className="date">{date.date}</p>
+                                    <p className="temparature">{date.temparature} <sup>&deg;C</sup></p>
+                                    <img className="icon" src={weatherType[date.weather]} alt=""></img>
+                                    <p className="weather">{date.weather}</p>
                                 </div>
                             </div>
                         )

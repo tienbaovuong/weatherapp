@@ -24,7 +24,6 @@ export default function MainPage(props) {
     const recordDataVN = useSelector((state) => state.vietnam)
     const recordDataGlobal = useSelector((state) => state.global)
     const isVN = (props.type === "vn")
-    let clickRemove = false
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
@@ -55,13 +54,13 @@ export default function MainPage(props) {
             dispatch(initiateGlobalCity(cityData))
         }
     }
-    let searchDetail
+    const [searchDetail, setSearchDetail] = useState("")
     const handleChange = (props) => {
-        searchDetail = props
+        setSearchDetail(props)
     }
     const handleQuery = (e) => {
         let queryResult = []
-        if(typeof searchDetail === 'undefined') searchDetail = ""
+        if(typeof searchDetail === 'undefined') setSearchDetail("")
         if(isVN){
             for(let searchdata in data.vietnam){
                 if(data.vietnam[searchdata].city.toLowerCase().startsWith(searchDetail.toLowerCase())){
@@ -85,6 +84,11 @@ export default function MainPage(props) {
             }
         }
     }
+    const handleKeyDown = (e) => {
+        if(e.keyCode === 13){
+            handleQuery(e)
+        }
+    }
     const handleRemove = (e) =>{
         if(isVN){
             dispatch(removeVNCity(e.target.getAttribute('data-arg')));
@@ -96,7 +100,7 @@ export default function MainPage(props) {
     }
 
     return(
-        <div className='mainpage'>
+        <div className='mainpage' onKeyDown={handleKeyDown}>
             <section className='currentLocation'>
                 <h2>Current location: {hanoiData.city} , {hanoiData.country}</h2>
                 <h2><img src={weatherType[todayData.weather]} alt=""></img></h2>
@@ -107,11 +111,13 @@ export default function MainPage(props) {
                 <TextField id="standard-basic" 
                             placeholder="Search for a city" 
                             variant="standard" 
+                            color="success"
                             inputProps={{ 
                                 style: { 
                                     color: "white", 
                                     fontSize: "30px",
-                                    margin: "10px"} 
+                                    margin: "10px",
+                                } 
                             }}
                             onChange = {e => handleChange(e.target.value)}
                             value = {searchDetail}/>
@@ -138,10 +144,12 @@ export default function MainPage(props) {
                         <ToggleButton value="vn"
                                     style={{
                                         color: "#ffffff",
+                                        padding:"11px"
                         }}>VN</ToggleButton>
                         <ToggleButton value="global"
                                     style={{
                                         color: "#ffffff",
+                                        padding: "11px"
                         }}>Global</ToggleButton>
                 </ToggleButtonGroup>
             </section>
@@ -159,11 +167,13 @@ export default function MainPage(props) {
                     return(
                         <div className='col-md-4'>
                             <div className='item' onClick={() => navigate(`/${city.city}`)}>
-                                <p>{city.city}</p>
-                                <img src = "/image/remove.jpg" className="removeButton" onClick={(e) => handleRemove(e)} data-arg = {city.city}></img>
-                                <p>{temp.temparature} &deg;C</p>
-                                <p>{temp.weather}</p>
-                                <img src={weatherType[temp.weather]} alt="" width = "100px" height="100px"></img>
+                            <img src = "/image/remove.jpg" alt="" className="removeButton" onClick={(e) => handleRemove(e)} data-arg = {city.city}></img>
+                                <div className='container'>
+                                    <p className='city'>{city.city} <sup className='country'>{city.country.slice(0,2)}</sup></p>
+                                    <p className='temparature'>{temp.temparature} <sup>&deg;C</sup></p>
+                                    <img className='icon' src={weatherType[temp.weather]} alt=""></img>
+                                    <p className='weather'>{temp.weather}</p>
+                                </div>
                             </div>
                         </div>
                     )
@@ -180,12 +190,14 @@ export default function MainPage(props) {
                     }
                     return(
                         <div className='col-md-4'>
-                            <div className='item'>
-                                <p className='city'>{city.city}</p>
-                                <img src = "/image/remove.jpg" className="removeButton" onClick={(e) => handleRemove(e)} data-arg={city.city}></img>
-                                <p className='temparature'>{temp.temparature} &deg;C</p>
-                                <p className='weather'>{temp.weather}</p>
-                                <img className='icon' src={weatherType[temp.weather]} alt="" width = "100px" height="100px" onClick={() => {if(!clickRemove) navigate(`/${city.city}`)}}></img>
+                            <div className='item' onClick={() => navigate(`/${city.city}`)}>
+                            <img src = "/image/remove.jpg" alt="" className="removeButton" onClick={(e) => handleRemove(e)} data-arg = {city.city}></img>
+                                <div className='container'>
+                                    <p className='city'>{city.city} <sup className='country'>{city.country.slice(0,2)}</sup></p>
+                                    <p className='temparature'>{temp.temparature} <sup>&deg;C</sup></p>
+                                    <img className='icon' src={weatherType[temp.weather]} alt=""></img>
+                                    <p className='weather'>{temp.weather}</p>
+                                </div>
                             </div>
                         </div>
                     )

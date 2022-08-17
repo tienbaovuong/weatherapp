@@ -10,15 +10,57 @@
 
 .item{
     background-color: white;
+    color: black;
+    box-shadow: rgba(145, 145, 145, 0.4) 0 25px 0px -13px;
+
     margin-top: 30px;
     border-radius: 20px;
-    color: black;
     padding: 10px;
+
+    /* text-align: left; */
+}
+.item .city{
+    color: gray;
+    font-size: 25px;
+}
+.item .city .country{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: orange;
+
+    border-radius: 10px;
+    padding: 1px 8px 1px 8px;
+}
+.item .temparature{
+    font-size: 50px;
+    font-weight: 700;
+}
+.item .weather{
+    margin-top: 10px;
+    color: gray;
+    font-size: 15px;
+
+    text-transform: uppercase;
 }
 .item .removeButton{
     width: 20px;
     height: 20px;
     position: relative;
-    top: -40px;
-    left: 45%;
+    right: 45%;
+}
+.item .icon{
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 1000px) {
+    .item .country{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .item .country{
+        display: unset;
+    }
 }
