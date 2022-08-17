@@ -1,11 +1,24 @@
-import { TextField, Button } from '@material-ui/core';
+import { TextField, Button} from '@material-ui/core';
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import './css/Mainpage.css';
 import{initiateVNCity, removeVNCity, addVNCity} from './store/reducer/vietnamslice.js';
 import{initiateGlobalCity, removeGlobalCity, addGlobalCity} from './store/reducer/globalslice.js';
 import { currentDate } from './utils/currentDate';
 export default function MainPage(props) {
+    const [alignment, setAlignment] = useState(props.type);
+    const handleChangeType = (props)=> {
+        setAlignment(props);
+        if(isVN && props === "global"){
+            navigate("/global-cities")
+        }
+        else if(!isVN && props === "vn"){
+            navigate("/vietnam-cities")
+        }
+    };
     const data = useSelector((state) => state.citiesData)
     const weatherType = useSelector((state) => state.weather)
     const recordDataVN = useSelector((state) => state.vietnam)
@@ -48,6 +61,7 @@ export default function MainPage(props) {
     }
     const handleQuery = (e) => {
         let queryResult = []
+        if(typeof searchDetail === 'undefined') searchDetail = ""
         if(isVN){
             for(let searchdata in data.vietnam){
                 if(data.vietnam[searchdata].city.toLowerCase().startsWith(searchDetail.toLowerCase())){
@@ -85,6 +99,7 @@ export default function MainPage(props) {
         <div className='mainpage'>
             <section className='currentLocation'>
                 <h2>Current location: {hanoiData.city} , {hanoiData.country}</h2>
+                <h2><img src={weatherType[todayData.weather]} alt=""></img></h2>
                 <h2>{todayData.temparature} &deg;C, {todayData.weather}</h2>
             </section>
 
@@ -106,10 +121,29 @@ export default function MainPage(props) {
                         style={{
                             backgroundColor: "#E6104c",
                             fontSize: "18px",
-                            color: "white",
+                            color: "#ffffff",
                             margin: "10px",
                         }}>
                             Submit</Button>
+                <ToggleButtonGroup
+                        value={alignment}
+                        exclusive
+                        onChange={e => handleChangeType(e.target.value)}
+                        style={{
+                            backgroundColor: "#E6104c",
+                            fontSize: "18px",
+                            margin: "10px",
+                        }}
+                        >
+                        <ToggleButton value="vn"
+                                    style={{
+                                        color: "#ffffff",
+                        }}>VN</ToggleButton>
+                        <ToggleButton value="global"
+                                    style={{
+                                        color: "#ffffff",
+                        }}>Global</ToggleButton>
+                </ToggleButtonGroup>
             </section>
 
             <section className='itemList'>
@@ -147,11 +181,11 @@ export default function MainPage(props) {
                     return(
                         <div className='col-md-4'>
                             <div className='item'>
-                                <p>{city.city}</p>
+                                <p className='city'>{city.city}</p>
                                 <img src = "/image/remove.jpg" className="removeButton" onClick={(e) => handleRemove(e)} data-arg={city.city}></img>
-                                <p>{temp.temparature} &deg;C</p>
-                                <p>{temp.weather}</p>
-                                <img src={weatherType[temp.weather]} alt="" width = "100px" height="100px" onClick={() => {if(!clickRemove) navigate(`/${city.city}`)}}></img>
+                                <p className='temparature'>{temp.temparature} &deg;C</p>
+                                <p className='weather'>{temp.weather}</p>
+                                <img className='icon' src={weatherType[temp.weather]} alt="" width = "100px" height="100px" onClick={() => {if(!clickRemove) navigate(`/${city.city}`)}}></img>
                             </div>
                         </div>
                     )
