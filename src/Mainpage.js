@@ -2,8 +2,8 @@ import { TextField, Button } from '@material-ui/core';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import './css/Mainpage.css';
-import{initiateVNCity, removeVNCity} from './store/reducer/vietnamslice.js';
-import{initiateGlobalCity, removeGlobalCity} from './store/reducer/globalslice.js';
+import{initiateVNCity, removeVNCity, addVNCity} from './store/reducer/vietnamslice.js';
+import{initiateGlobalCity, removeGlobalCity, addGlobalCity} from './store/reducer/globalslice.js';
 import { currentDate } from './utils/currentDate';
 export default function MainPage(props) {
     const data = useSelector((state) => state.citiesData)
@@ -11,7 +11,7 @@ export default function MainPage(props) {
     const recordDataVN = useSelector((state) => state.vietnam)
     const recordDataGlobal = useSelector((state) => state.global)
     const isVN = (props.type === "vn")
-    console.log(isVN)
+    let clickRemove = false
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
@@ -46,10 +46,40 @@ export default function MainPage(props) {
     const handleChange = (props) => {
         searchDetail = props
     }
-    const handleQuery = () => {
-
+    const handleQuery = (e) => {
+        let queryResult = []
+        if(isVN){
+            for(let searchdata in data.vietnam){
+                if(data.vietnam[searchdata].city.toLowerCase().startsWith(searchDetail.toLowerCase())){
+                    queryResult = queryResult.concat(data.vietnam[searchdata])
+                }
+            }
+        }
+        else{
+            for(let searchdata in data.global){
+                if(data.global[searchdata].city.toLowerCase().startsWith(searchDetail.toLowerCase())){
+                    queryResult = queryResult.concat(data.global[searchdata])
+                }
+            } 
+        }
+        if(queryResult.length !== 0){
+            if(isVN){
+                dispatch(addVNCity(queryResult))
+            }
+            else{
+                dispatch(addGlobalCity(queryResult))
+            }
+        }
     }
-
+    const handleRemove = (e) =>{
+        if(isVN){
+            dispatch(removeVNCity(e.target.getAttribute('data-arg')));
+        }
+        else{
+            dispatch(removeGlobalCity(e.target.getAttribute('data-arg')));
+        }
+        e.stopPropagation();
+    }
 
     return(
         <div className='mainpage'>
@@ -72,7 +102,7 @@ export default function MainPage(props) {
                             value = {searchDetail}/>
                 <Button variant="contained"
                         size="large"
-                        onClick={handleQuery()}
+                        onClick={e => handleQuery(e)}
                         style={{
                             backgroundColor: "#E6104c",
                             fontSize: "18px",
@@ -95,6 +125,8 @@ export default function MainPage(props) {
                     return(
                         <div className='col-md-4'>
                             <div className='item' onClick={() => navigate(`/${city.city}`)}>
+                                <p>{city.city}</p>
+                                <img src = "/image/remove.jpg" className="removeButton" onClick={(e) => handleRemove(e)} data-arg = {city.city}></img>
                                 <p>{temp.temparature} &deg;C</p>
                                 <p>{temp.weather}</p>
                                 <img src={weatherType[temp.weather]} alt="" width = "100px" height="100px"></img>
@@ -114,10 +146,12 @@ export default function MainPage(props) {
                     }
                     return(
                         <div className='col-md-4'>
-                            <div className='item' onClick={() => navigate(`/${city.city}`)}>
+                            <div className='item'>
+                                <p>{city.city}</p>
+                                <img src = "/image/remove.jpg" className="removeButton" onClick={(e) => handleRemove(e)} data-arg={city.city}></img>
                                 <p>{temp.temparature} &deg;C</p>
                                 <p>{temp.weather}</p>
-                                <img src={weatherType[temp.weather]} alt="" width = "100px" height="100px"></img>
+                                <img src={weatherType[temp.weather]} alt="" width = "100px" height="100px" onClick={() => {if(!clickRemove) navigate(`/${city.city}`)}}></img>
                             </div>
                         </div>
                     )

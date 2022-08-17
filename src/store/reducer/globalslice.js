@@ -8,12 +8,21 @@ export const globalSlice = createSlice({
             return state.concat(action.payload)
         },
         removeGlobalCity: (state, action) =>{
-            state.value = state.value.filter(city =>{
+            state = state.filter(city =>{
                 return city.city !== action.payload
             })
+            return state
+        },
+        addGlobalCity: (state, action) =>{
+            for(let data in action.payload){
+                state = state.filter(city =>{
+                    return city.city !== action.payload[data].city
+                })
+            }
+            return state.concat(action.payload)
         }
     }
 })
-export const{initiateGlobalCity, removeGlobalCity}=globalSlice.actions
+export const{initiateGlobalCity, removeGlobalCity, addGlobalCity}=globalSlice.actions
 
 export default globalSlice.reducer

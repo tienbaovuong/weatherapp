@@ -193,8 +193,39 @@ export const citiesDataSlice = createSlice({
         ],
         'global':[
             {
-                'city': 'Ha Noi',
-                'country': 'Vietnam',
+                'city': 'Paris',
+                'country': 'France',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
+                        "weather": "Cloudy",
+                        "temparature": "33"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Drought",
+                        "temparature": "40"
+                    }
+                ]
+            },
+            {
+                'city': 'Melborne',
+                'country': 'Australia',
                 'weather':[
                     {
                         "date": "16/08/2022",
