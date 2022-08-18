@@ -20,18 +20,28 @@ export const citiesDataSlice = createSlice({
                     },
                     {
                         "date": "18/08/2022",
-                        "weather": "Cloudy",
+                        "weather": "Rainy",
                         "temparature": "33"
                     },
                     {
                         "date": "19/08/2022",
-                        "weather": "Sunny",
+                        "weather": "Rainy",
                         "temparature": "36"
                     },
                     {
                         "date": "20/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
                     }
                 ]
             },
@@ -41,8 +51,8 @@ export const citiesDataSlice = createSlice({
                 'weather':[
                     {
                         "date": "16/08/2022",
-                        "weather": "Sunny",
-                        "temparature": "35"
+                        "weather": "Cloudy",
+                        "temparature": "29"
                     },
                     {
                         "date": "17/08/2022",
@@ -51,18 +61,28 @@ export const citiesDataSlice = createSlice({
                     },
                     {
                         "date": "18/08/2022",
-                        "weather": "Cloudy",
+                        "weather": "Sunny",
                         "temparature": "33"
                     },
                     {
                         "date": "19/08/2022",
-                        "weather": "Sunny",
-                        "temparature": "36"
+                        "weather": "Tornado",
+                        "temparature": "25"
                     },
                     {
                         "date": "20/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
                     }
                 ]
             },
@@ -82,18 +102,28 @@ export const citiesDataSlice = createSlice({
                     },
                     {
                         "date": "18/08/2022",
-                        "weather": "Cloudy",
-                        "temparature": "33"
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
                     },
                     {
                         "date": "19/08/2022",
-                        "weather": "Sunny",
+                        "weather": "Rainy",
                         "temparature": "36"
                     },
                     {
                         "date": "20/08/2022",
-                        "weather": "Drought",
-                        "temparature": "40"
+                        "weather": "Tornado",
+                        "temparature": "30"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
                     }
                 ]
             },
@@ -125,6 +155,16 @@ export const citiesDataSlice = createSlice({
                         "date": "20/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
                     }
                 ]
             },
@@ -156,6 +196,16 @@ export const citiesDataSlice = createSlice({
                         "date": "20/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
                     }
                 ]
             },
@@ -175,7 +225,48 @@ export const citiesDataSlice = createSlice({
                     },
                     {
                         "date": "18/08/2022",
-                        "weather": "Cloudy",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Drought",
+                        "temparature": "40"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
+                    }
+                ]
+            },
+            {
+                'city': 'Hue',
+                'country': 'Vietnam',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
+                        "weather": "Rainy",
                         "temparature": "33"
                     },
                     {
@@ -187,6 +278,98 @@ export const citiesDataSlice = createSlice({
                         "date": "20/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
+                    }
+                ]
+            },
+            {
+                'city': 'Da lat',
+                'country': 'Vietnam',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
+                        "weather": "Snowy",
+                        "temparature": "12"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Drought",
+                        "temparature": "40"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
+                    }
+                ]
+            },
+            {
+                'city': 'Quy Nhon',
+                'country': 'Vietnam',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "33"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Drought",
+                        "temparature": "40"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
                     }
                 ]
             }
@@ -220,6 +403,16 @@ export const citiesDataSlice = createSlice({
                         "date": "20/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
                     }
                 ]
             },
@@ -239,8 +432,8 @@ export const citiesDataSlice = createSlice({
                     },
                     {
                         "date": "18/08/2022",
-                        "weather": "Cloudy",
-                        "temparature": "33"
+                        "weather": "Drought",
+                        "temparature": "40"
                     },
                     {
                         "date": "19/08/2022",
@@ -249,8 +442,346 @@ export const citiesDataSlice = createSlice({
                     },
                     {
                         "date": "20/08/2022",
+                        "weather": "Tornado",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
+                    }
+                ]
+            },
+            {
+                'city': 'Bangkok',
+                'country': 'Thailand',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Tornado",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
+                    }
+                ]
+            },
+            {
+                'city': 'London',
+                'country': 'England',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
+                        "weather": "Snowy",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Tornado",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
+                    }
+                ]
+            },
+            {
+                'city': 'Dubai',
+                'country': 'UAE',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Tornado",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
+                    }
+                ]
+            },
+            {
+                'city': 'Tokyo',
+                'country': 'Japan',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Tornado",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
+                    }
+                ]
+            },
+            {
+                'city': 'Amsterdam',
+                'country': 'Netherlands',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "30"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Tornado",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
+                    }
+                ]
+            },
+            {
+                'city': 'Seoul',
+                'country': 'Korea',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
+                        "weather": "Tornado",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Tornado",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
+                    }
+                ]
+            },
+            {
+                'city': 'Barcelona',
+                'country': 'Spain',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Tornado",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
+                    }
+                ]
+            },
+            {
+                'city': 'Madrid',
+                'country': 'Spain',
+                'weather':[
+                    {
+                        "date": "16/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "35"
+                    },
+                    {
+                        "date": "17/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "32"
+                    },
+                    {
+                        "date": "18/08/2022",
+                        "weather": "Rainy",
+                        "temparature": "30"
+                    },
+                    {
+                        "date": "19/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "20/08/2022",
+                        "weather": "Tornado",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Blizzard",
+                        "temparature": "10"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Thunderstorm",
+                        "temparature": "30"
                     }
                 ]
             }
