@@ -9,37 +9,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Vietnam',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Rainy",
                         "temparature": "33"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Rainy",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     }
@@ -50,37 +50,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Vietnam',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Cloudy",
                         "temparature": "29"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Sunny",
                         "temparature": "33"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Tornado",
                         "temparature": "25"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -91,37 +91,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Vietnam',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Rainy",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Tornado",
                         "temparature": "30"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -132,37 +132,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Vietnam',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Cloudy",
                         "temparature": "33"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -173,37 +173,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Vietnam',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Cloudy",
                         "temparature": "33"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -214,37 +214,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Vietnam',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -255,37 +255,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Vietnam',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Rainy",
                         "temparature": "33"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -296,37 +296,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Vietnam',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Snowy",
                         "temparature": "12"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -337,37 +337,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Vietnam',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Rainy",
                         "temparature": "33"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -380,37 +380,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'France',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Cloudy",
                         "temparature": "33"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -421,37 +421,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Australia',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Tornado",
                         "temparature": "20"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -462,37 +462,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Thailand',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Drought",
                         "temparature": "40"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Tornado",
                         "temparature": "20"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -503,37 +503,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'England',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Snowy",
                         "temparature": "10"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Tornado",
                         "temparature": "20"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -544,37 +544,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'UAE',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "20"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Tornado",
                         "temparature": "20"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -585,37 +585,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Japan',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Tornado",
                         "temparature": "20"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -626,37 +626,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Netherlands',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Rainy",
                         "temparature": "30"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Tornado",
                         "temparature": "20"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -667,24 +667,14 @@ export const citiesDataSlice = createSlice({
                 'country': 'Korea',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
-                    },
-                    {
-                        "date": "18/08/2022",
-                        "weather": "Tornado",
-                        "temparature": "20"
-                    },
-                    {
-                        "date": "19/08/2022",
-                        "weather": "Sunny",
-                        "temparature": "36"
                     },
                     {
                         "date": "20/08/2022",
@@ -693,11 +683,21 @@ export const citiesDataSlice = createSlice({
                     },
                     {
                         "date": "21/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "22/08/2022",
+                        "weather": "Tornado",
+                        "temparature": "20"
+                    },
+                    {
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -708,37 +708,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Spain',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
-                        "weather": "Sunny",
-                        "temparature": "36"
-                    },
-                    {
-                        "date": "19/08/2022",
-                        "weather": "Sunny",
-                        "temparature": "36"
-                    },
-                    {
                         "date": "20/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "21/08/2022",
+                        "weather": "Sunny",
+                        "temparature": "36"
+                    },
+                    {
+                        "date": "22/08/2022",
                         "weather": "Tornado",
                         "temparature": "20"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
@@ -749,37 +749,37 @@ export const citiesDataSlice = createSlice({
                 'country': 'Spain',
                 'weather':[
                     {
-                        "date": "16/08/2022",
+                        "date": "18/08/2022",
                         "weather": "Sunny",
                         "temparature": "35"
                     },
                     {
-                        "date": "17/08/2022",
+                        "date": "19/08/2022",
                         "weather": "Rainy",
                         "temparature": "32"
                     },
                     {
-                        "date": "18/08/2022",
+                        "date": "20/08/2022",
                         "weather": "Rainy",
                         "temparature": "30"
                     },
                     {
-                        "date": "19/08/2022",
+                        "date": "21/08/2022",
                         "weather": "Sunny",
                         "temparature": "36"
                     },
                     {
-                        "date": "20/08/2022",
+                        "date": "22/08/2022",
                         "weather": "Tornado",
                         "temparature": "20"
                     },
                     {
-                        "date": "21/08/2022",
+                        "date": "23/08/2022",
                         "weather": "Blizzard",
                         "temparature": "10"
                     },
                     {
-                        "date": "22/08/2022",
+                        "date": "24/08/2022",
                         "weather": "Thunderstorm",
                         "temparature": "30"
                     }
